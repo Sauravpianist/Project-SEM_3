@@ -43,7 +43,7 @@ export default function DropImageCard({setFile, canvasRef, fileLoaded}) {
 
     return <Card {...getRootProps()} className={classes.card}>
         <canvas className={classes.canvas} ref={canvasRef} width={299} height={299} />
-        <input alt="Image Dropzone" type="image" className={classes.input} {...getInputProps()} />
+        <input alt="Image Dropzone"  className={classes.input} {...getInputProps()} />
         <DropzoneIcon fileLoaded={fileLoaded} isDragActive={isDragActive} />
     </Card>
 }
